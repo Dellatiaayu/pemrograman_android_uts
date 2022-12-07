@@ -17,7 +17,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "Dashboard Admin",
+            "DASHBOARD ADMIN :",
           ),
         ),
       ),
@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
         children: [
           Container(
             decoration: const BoxDecoration(
-              color: Colors.blue,
+              color: Color(0xFF417DC5),
             ),
             width: 600,
             height: 70,
@@ -35,7 +35,7 @@ class Home extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 Text(
-                  "Selamat Datang di Aplikasi UTS",
+                  "Selamat Datang dalam Aplikasi UTS",
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
@@ -51,14 +51,14 @@ class Home extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 Text(
-                  "Nama : Dellatia Ayu Nur'Faradila",
+                  "NIM : 20200121047",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,
                   ),
                 ),
                 Text(
-                  "NIM : 20200121047",
+                  "Nama : Dellatia Ayu Nur'Faradila",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,

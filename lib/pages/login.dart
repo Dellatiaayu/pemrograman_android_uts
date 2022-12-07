@@ -17,9 +17,11 @@ class Login extends StatelessWidget {
               child: Container(
                 height: 325,
                 width: 425,
-                decoration: const BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                      color: Color.fromARGB(255, 31, 104, 141), width: 3),
+                  color: Color(0xFF417DC5),
+                  borderRadius: BorderRadius.all(Radius.circular(50)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.all(10),
@@ -27,12 +29,16 @@ class Login extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text(
-                        "Login Aplikasi",
-                        style: TextStyle(
-                          fontSize: 30,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                      Container(
+                        color: Color.fromARGB(255, 93, 135, 212),
+                        padding: EdgeInsets.all(15),
+                        child: const Text(
+                          "LOGIN APLIKASI",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                       const SizedBox(
@@ -115,18 +121,26 @@ class Login extends StatelessWidget {
                         height: 20,
                       ),
                       SizedBox(
-                        width: 100,
-                        height: 30,
-                        child: ElevatedButton(
-                          style: TextButton.styleFrom(
-                            backgroundColor: Colors.white,
-                          ),
-                          onPressed: () {
-                            Navigator.of(context).pushNamed('/home');
-                          },
-                          child: const Text(
-                            'Login',
-                            style: TextStyle(color: Colors.black),
+                        width: 150,
+                        height: 40,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: Color.fromARGB(255, 60, 84, 120),
+                                  width: 3),
+                              borderRadius: BorderRadius.circular(8)),
+                          child: ElevatedButton(
+                            style: TextButton.styleFrom(
+                                backgroundColor: Colors.black,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5))),
+                            onPressed: () {
+                              Navigator.of(context).pushNamed('/home');
+                            },
+                            child: const Text(
+                              'LOGIN',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                         ),
                       ),
